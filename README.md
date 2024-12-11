@@ -1,4 +1,4 @@
-# MMSearch 🔥🔍: Benchmarking the Potential of Large Models as Multi-modal Search Engines
+# MMSearch 🔥🔍: Unveiling the Potential of Large Models as Multi-modal Search Engines
 
 ![MultimodalSearch](https://img.shields.io/badge/Task-Multimodal_Search-red) 
 ![Multimodal AI Search Engine](https://img.shields.io/badge/Task-Multimodal_AI_Search_Engine-red) 
@@ -8,7 +8,7 @@
 ![GPT-4V](https://img.shields.io/badge/Model-GPT--4V-green)
 ![Claude-3.5](https://img.shields.io/badge/Model-Claude--3.5-green)
 
-Official repository for "[MMSearch: Benchmarking the Potential of Large Models as Multi-modal Search Engines](https://arxiv.org/pdf/2409.12959)".
+Official repository for "[MMSearch: Unveiling the Potential of Large Models as Multi-modal Search Engines](https://arxiv.org/pdf/2409.12959)".
 
 🌟 For more details, please refer to the project page with dataset exploration and visualization tools.
 
