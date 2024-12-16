@@ -73,7 +73,7 @@ playwright install
 
 **(a). ✨ Evaluation with models implemented in [VLMEvalKit](https://github.com/open-compass/VLMEvalKit)**
 
-We now support directly using the models implemented in [VLMEvalKit](https://github.com/open-compass/VLMEvalKit). You need to first install VLMEvalKit with the following command, or follow the guidance in its repo:
+We now support directly using the models implemented in [VLMEvalKit](https://github.com/open-compass/VLMEvalKit). The available name list of the model is [here](https://github.com/open-compass/VLMEvalKit/blob/main/vlmeval/config.py).  You need to first install VLMEvalKit with the following command, or follow the guidance in its repo:
 
 ```bash
 git clone https://github.com/open-compass/VLMEvalKit.git
@@ -81,9 +81,9 @@ cd VLMEvalKit
 pip install -e .
 ```
 
-Then, you can directly use the models implemented in VLMEvalKit, the available name list of the model is [here](https://github.com/open-compass/VLMEvalKit/blob/main/vlmeval/config.py). 
+Then you need to set up the model in VLMEvalKit as introduced in the [step 1 in its Quickstart](https://github.com/open-compass/VLMEvalKit/blob/main/docs/en/Quickstart.md#step-1-configuration). 
 
-To use the model, simply add the prefix `vlmevalkit_` in front of the model name in the list. For example, to use `llava_onevision_qwen2_7b_ov`, your input `model_type` should be `vlmevalkit_llava_onevision_qwen2_7b_ov`. We provide an example of the rerank task in `scripts/run_requery_vlmevalkit.sh`.
+After you make sure you can infer with the model in VLMEvalKit by the command `vlmutil check {MODEL_NAME}`, you can use the model by simply adding the prefix `vlmevalkit_` in front of the model name in the list. For example, to use `llava_onevision_qwen2_7b_ov`, your input `model_type` should be `vlmevalkit_llava_onevision_qwen2_7b_ov`. We provide an example of the requery task in `scripts/run_requery_vlmevalkit.sh`.
 
 **Note that, several models in VLMEvalKit do not support text-only inference, so it may not support end2end task (some queries in round1 do not have image input).**
 
